@@ -1,0 +1,279 @@
+\hypertarget{classwp__engine_1_1_object}{\section{wp\-\_\-engine.\-Object Class Reference}
+\label{classwp__engine_1_1_object}\index{wp\-\_\-engine.\-Object@{wp\-\_\-engine.\-Object}}
+}
+
+
+A class for graphical 2\-D objects.  
+
+
+Inheritance diagram for wp\-\_\-engine.\-Object\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwp__engine_1_1_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwp__engine_1_1_object_a76308a1799d3e2a26da8cfbce0ab608e}{Object} (float x, float y, Texture2\-D \hyperlink{classwp__engine_1_1_object_a5aebe29df25c51280d462cab63733c98}{texture}, Layer layer)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hyperlink{classwp__engine_1_1_object_ac41bd1d0ab2e99dd6de7e062bf2f5342}{Object} (Texture2\-D \hyperlink{classwp__engine_1_1_object_a5aebe29df25c51280d462cab63733c98}{texture}, Layer layer)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hyperlink{classwp__engine_1_1_object_a0a364d6b59424f160dfbe81b60ecf138}{Object} (float x, float y, string texture\-Name, Layer layer)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_object_a7bec0bf1aadb96c3c4c570d0bc236738}{load\-Assets} (Content\-Manager content)
+\begin{DoxyCompactList}\small\item\em Loads any unloaded assets. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{classwp__engine_1_1_object_a848ea6861e5132837e49a3171d1f885a}{get\-Center} ()
+\begin{DoxyCompactList}\small\item\em Returns the location of the center of the object on the screen. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_object_a8ae28b3c127cde23d39a2fec33dd910b}{set\-Location} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Used to set the location of the object. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_object_ada86fb0b40d9232c839ce6d073023397}{draw} (Sprite\-Batch sb)
+\begin{DoxyCompactList}\small\item\em Draws the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classwp__engine_1_1_object}{Object} \hyperlink{classwp__engine_1_1_object_a0f9f6f59570251ad2003ea3bfa916730}{create\-Silent\-Object} (float x, float y, Texture2\-D \hyperlink{classwp__engine_1_1_object_a5aebe29df25c51280d462cab63733c98}{texture}, Layer layer)
+\begin{DoxyCompactList}\small\item\em Returns a silent object. \end{DoxyCompactList}\item 
+static \hyperlink{classwp__engine_1_1_object}{Object} \hyperlink{classwp__engine_1_1_object_a969b878e10457d6ef962db2c970e32a4}{create\-Silent\-Object} (float x, float y, string texture\-Name, Layer layer)
+\begin{DoxyCompactList}\small\item\em Returns a silent object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classwp__engine_1_1_object_a7329f71d51a64edeae4eecb5e7fccb27}{Vector2 {\bfseries location}}\label{classwp__engine_1_1_object_a7329f71d51a64edeae4eecb5e7fccb27}
+
+\item 
+\hypertarget{classwp__engine_1_1_object_a54782bfa242dd87f632d4c9829181746}{bool {\bfseries active}}\label{classwp__engine_1_1_object_a54782bfa242dd87f632d4c9829181746}
+
+\item 
+\hypertarget{classwp__engine_1_1_object_a26ff3315f04a4686d08ef3ee7e227227}{bool {\bfseries loaded}}\label{classwp__engine_1_1_object_a26ff3315f04a4686d08ef3ee7e227227}
+
+\item 
+\hypertarget{classwp__engine_1_1_object_aeca7deef83d80e53be3ec06ed7b42d00}{string {\bfseries asset\-Name}}\label{classwp__engine_1_1_object_aeca7deef83d80e53be3ec06ed7b42d00}
+
+\item 
+Texture2\-D \hyperlink{classwp__engine_1_1_object_a5aebe29df25c51280d462cab63733c98}{texture}
+\begin{DoxyCompactList}\small\item\em The texture of the object. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_object_a55c63fadfe9ca3ae807a4f7b0fb222e0}{Layer {\bfseries layer}}\label{classwp__engine_1_1_object_a55c63fadfe9ca3ae807a4f7b0fb222e0}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classwp__engine_1_1_object_a9b8c2e5191f6aa6971e82045e1dc4746}{bool \hyperlink{classwp__engine_1_1_object_a9b8c2e5191f6aa6971e82045e1dc4746}{Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{classwp__engine_1_1_object_a9b8c2e5191f6aa6971e82045e1dc4746}
+
+\begin{DoxyCompactList}\small\item\em A boolean variable that indicates whether or not the object should be updated and drawn. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_object_afb350e018ecade6b4869c617cf575d87}{Layer {\bfseries Draw\-Layer}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{classwp__engine_1_1_object_afb350e018ecade6b4869c617cf575d87}
+
+\item 
+\hypertarget{classwp__engine_1_1_object_a04fc1210463e5919b256c3bb56640eff}{Vector2 \hyperlink{classwp__engine_1_1_object_a04fc1210463e5919b256c3bb56640eff}{Location}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{classwp__engine_1_1_object_a04fc1210463e5919b256c3bb56640eff}
+
+\begin{DoxyCompactList}\small\item\em Vector2 variable that stores the location of the object. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_object_a56bc69f58db1ef0e759c28a370328fab}{Vector2 {\bfseries Texture\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}\label{classwp__engine_1_1_object_a56bc69f58db1ef0e759c28a370328fab}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for graphical 2\-D objects. 
+
+Part of the object partition.
+
+The base class for all of the objects. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classwp__engine_1_1_object_a76308a1799d3e2a26da8cfbce0ab608e}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!Object@{Object}}
+\index{Object@{Object}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Object.\-Object (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{Texture2\-D}]{texture, }
+\item[{Layer}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_object_a76308a1799d3e2a26da8cfbce0ab608e}
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & object location (x-\/coordinate) \\
+\hline
+{\em y} & object location (y-\/coordinate) \\
+\hline
+{\em texture} & the picture which the object represents \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_object_ac41bd1d0ab2e99dd6de7e062bf2f5342}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!Object@{Object}}
+\index{Object@{Object}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Object.\-Object (
+\begin{DoxyParamCaption}
+\item[{Texture2\-D}]{texture, }
+\item[{Layer}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_object_ac41bd1d0ab2e99dd6de7e062bf2f5342}
+
+
+A constructor. 
+
+Sets the object location to (0, 0). 
+\begin{DoxyParams}{Parameters}
+{\em texture} & the picture which the object represents \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_object_a0a364d6b59424f160dfbe81b60ecf138}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!Object@{Object}}
+\index{Object@{Object}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Object.\-Object (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{string}]{texture\-Name, }
+\item[{Layer}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_object_a0a364d6b59424f160dfbe81b60ecf138}
+
+
+A constructor. 
+
+Creates an object without without having to load the texture (yet). 
+\begin{DoxyParams}{Parameters}
+{\em x} & object location (x-\/coordinate) \\
+\hline
+{\em y} & object location (y-\/coordinate) \\
+\hline
+{\em texture\-Name} & the name of the picture which the object represents \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classwp__engine_1_1_object_a0f9f6f59570251ad2003ea3bfa916730}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!create\-Silent\-Object@{create\-Silent\-Object}}
+\index{create\-Silent\-Object@{create\-Silent\-Object}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{create\-Silent\-Object}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Object} wp\-\_\-engine.\-Object.\-create\-Silent\-Object (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{Texture2\-D}]{texture, }
+\item[{Layer}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classwp__engine_1_1_object_a0f9f6f59570251ad2003ea3bfa916730}
+
+
+Returns a silent object. 
+
+It won't be updated or drawn unless specified otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & object location (x-\/coordinate) \\
+\hline
+{\em y} & object location (y-\/coordinate) \\
+\hline
+{\em texture} & the picture which the object represents \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_object_a969b878e10457d6ef962db2c970e32a4}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!create\-Silent\-Object@{create\-Silent\-Object}}
+\index{create\-Silent\-Object@{create\-Silent\-Object}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{create\-Silent\-Object}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Object} wp\-\_\-engine.\-Object.\-create\-Silent\-Object (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{string}]{texture\-Name, }
+\item[{Layer}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classwp__engine_1_1_object_a969b878e10457d6ef962db2c970e32a4}
+
+
+Returns a silent object. 
+
+It won't be updated or drawn unless specified otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & object location (x-\/coordinate) \\
+\hline
+{\em y} & object location (y-\/coordinate) \\
+\hline
+{\em texture\-Name} & the name of the picture which the object represents \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_object_ada86fb0b40d9232c839ce6d073023397}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!draw@{draw}}
+\index{draw@{draw}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Object.\-draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_object_ada86fb0b40d9232c839ce6d073023397}
+
+
+Draws the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the spritebatch of the game \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_object_a848ea6861e5132837e49a3171d1f885a}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!get\-Center@{get\-Center}}
+\index{get\-Center@{get\-Center}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{get\-Center}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 wp\-\_\-engine.\-Object.\-get\-Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_object_a848ea6861e5132837e49a3171d1f885a}
+
+
+Returns the location of the center of the object on the screen. 
+
+\begin{DoxyReturn}{Returns}
+the coordinates of the object's center (Vector2) 
+\end{DoxyReturn}
+\hypertarget{classwp__engine_1_1_object_a7bec0bf1aadb96c3c4c570d0bc236738}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!load\-Assets@{load\-Assets}}
+\index{load\-Assets@{load\-Assets}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{load\-Assets}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Object.\-load\-Assets (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_object_a7bec0bf1aadb96c3c4c570d0bc236738}
+
+
+Loads any unloaded assets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & the Content\-Manager of the game \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_object_a8ae28b3c127cde23d39a2fec33dd910b}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!set\-Location@{set\-Location}}
+\index{set\-Location@{set\-Location}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{set\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Object.\-set\-Location (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_object_a8ae28b3c127cde23d39a2fec33dd910b}
+
+
+Used to set the location of the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate \\
+\hline
+{\em y} & y-\/coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classwp__engine_1_1_object_a5aebe29df25c51280d462cab63733c98}{\index{wp\-\_\-engine\-::\-Object@{wp\-\_\-engine\-::\-Object}!texture@{texture}}
+\index{texture@{texture}!wp_engine::Object@{wp\-\_\-engine\-::\-Object}}
+\subsubsection[{texture}]{\setlength{\rightskip}{0pt plus 5cm}Texture2\-D wp\-\_\-engine.\-Object.\-texture\hspace{0.3cm}{\ttfamily [protected]}}}\label{classwp__engine_1_1_object_a5aebe29df25c51280d462cab63733c98}
+
+
+The texture of the object. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Object.\-cs\end{DoxyCompactItemize}

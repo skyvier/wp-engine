@@ -1,0 +1,129 @@
+\hypertarget{classwp__engine_1_1_animation}{\section{wp\-\_\-engine.\-Animation Class Reference}
+\label{classwp__engine_1_1_animation}\index{wp\-\_\-engine.\-Animation@{wp\-\_\-engine.\-Animation}}
+}
+
+
+A class designed to simplify animations.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwp__engine_1_1_animation_a4e886afeba32e2578fd95e0b0f8a81cd}{Animation} (float frame\-Length)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_animation_a52d2e541f25648623e8832d39547f25c}{void {\bfseries load\-Content} (Content\-Manager content\-Manager, string folder\-Name, string file\-Structure, int amount)}\label{classwp__engine_1_1_animation_a52d2e541f25648623e8832d39547f25c}
+
+\item 
+void \hyperlink{classwp__engine_1_1_animation_a08b58e15e94d72e16f67759817bd2179}{update} (float elapsed)
+\begin{DoxyCompactList}\small\item\em Updates the animation frame. \end{DoxyCompactList}\item 
+Texture2\-D \hyperlink{classwp__engine_1_1_animation_a818f24093e3cb5b7f2992094ca6f02bf}{get\-Texture} ()
+\begin{DoxyCompactList}\small\item\em Returns the current texture of the animation. \end{DoxyCompactList}\item 
+int \hyperlink{classwp__engine_1_1_animation_ad87a7bf52f4211929933731375f1cd1f}{size} ()
+\begin{DoxyCompactList}\small\item\em Returns amount of frames in the animation. \end{DoxyCompactList}\item 
+float \hyperlink{classwp__engine_1_1_animation_a2f6cb41af7cf180d9e0d3736e2f5f0f8}{get\-Frame\-Length} ()
+\begin{DoxyCompactList}\small\item\em Return the length of a single frame in the animation. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_animation_af8859a8b058c0506830f8a0b17962ef1}{void \hyperlink{classwp__engine_1_1_animation_af8859a8b058c0506830f8a0b17962ef1}{stop} ()}\label{classwp__engine_1_1_animation_af8859a8b058c0506830f8a0b17962ef1}
+
+\begin{DoxyCompactList}\small\item\em Stops the animation. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_animation_a88b793cfb8ae3e41d8d9681174074d4f}{void \hyperlink{classwp__engine_1_1_animation_a88b793cfb8ae3e41d8d9681174074d4f}{start} ()}\label{classwp__engine_1_1_animation_a88b793cfb8ae3e41d8d9681174074d4f}
+
+\begin{DoxyCompactList}\small\item\em Starts the animation from the last frame. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_animation_a11b86f5a57080c045be8e84fd6a22568}{void \hyperlink{classwp__engine_1_1_animation_a11b86f5a57080c045be8e84fd6a22568}{reset} ()}\label{classwp__engine_1_1_animation_a11b86f5a57080c045be8e84fd6a22568}
+
+\begin{DoxyCompactList}\small\item\em Resets the animation to the first frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class designed to simplify animations. 
+
+Manages multiple textures. Before using this take a look at the \hyperlink{classwp__engine_1_1_animated_object}{Animated\-Object} class because you'd probably rather use it!
+
+Part of the animation partition. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classwp__engine_1_1_animation_a4e886afeba32e2578fd95e0b0f8a81cd}{\index{wp\-\_\-engine\-::\-Animation@{wp\-\_\-engine\-::\-Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!wp_engine::Animation@{wp\-\_\-engine\-::\-Animation}}
+\subsubsection[{Animation}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Animation.\-Animation (
+\begin{DoxyParamCaption}
+\item[{float}]{frame\-Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_animation_a4e886afeba32e2578fd95e0b0f8a81cd}
+
+
+A constructor. 
+
+Loads all the files in a folder as animation frames and initializes the class. 
+\begin{DoxyParams}{Parameters}
+{\em content\-Manager} & the content manager for the game \\
+\hline
+{\em folder\-Name} & the name of the folder which contains the frames \\
+\hline
+{\em frame\-Length} & the length of a single frame in seconds \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classwp__engine_1_1_animation_a2f6cb41af7cf180d9e0d3736e2f5f0f8}{\index{wp\-\_\-engine\-::\-Animation@{wp\-\_\-engine\-::\-Animation}!get\-Frame\-Length@{get\-Frame\-Length}}
+\index{get\-Frame\-Length@{get\-Frame\-Length}!wp_engine::Animation@{wp\-\_\-engine\-::\-Animation}}
+\subsubsection[{get\-Frame\-Length}]{\setlength{\rightskip}{0pt plus 5cm}float wp\-\_\-engine.\-Animation.\-get\-Frame\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_animation_a2f6cb41af7cf180d9e0d3736e2f5f0f8}
+
+
+Return the length of a single frame in the animation. 
+
+\begin{DoxyReturn}{Returns}
+length of a single frame in the animation 
+\end{DoxyReturn}
+\hypertarget{classwp__engine_1_1_animation_a818f24093e3cb5b7f2992094ca6f02bf}{\index{wp\-\_\-engine\-::\-Animation@{wp\-\_\-engine\-::\-Animation}!get\-Texture@{get\-Texture}}
+\index{get\-Texture@{get\-Texture}!wp_engine::Animation@{wp\-\_\-engine\-::\-Animation}}
+\subsubsection[{get\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}Texture2\-D wp\-\_\-engine.\-Animation.\-get\-Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_animation_a818f24093e3cb5b7f2992094ca6f02bf}
+
+
+Returns the current texture of the animation. 
+
+\begin{DoxyReturn}{Returns}
+current texture of the animation 
+\end{DoxyReturn}
+\hypertarget{classwp__engine_1_1_animation_ad87a7bf52f4211929933731375f1cd1f}{\index{wp\-\_\-engine\-::\-Animation@{wp\-\_\-engine\-::\-Animation}!size@{size}}
+\index{size@{size}!wp_engine::Animation@{wp\-\_\-engine\-::\-Animation}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int wp\-\_\-engine.\-Animation.\-size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_animation_ad87a7bf52f4211929933731375f1cd1f}
+
+
+Returns amount of frames in the animation. 
+
+\begin{DoxyReturn}{Returns}
+amount of frames in the animation 
+\end{DoxyReturn}
+\hypertarget{classwp__engine_1_1_animation_a08b58e15e94d72e16f67759817bd2179}{\index{wp\-\_\-engine\-::\-Animation@{wp\-\_\-engine\-::\-Animation}!update@{update}}
+\index{update@{update}!wp_engine::Animation@{wp\-\_\-engine\-::\-Animation}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Animation.\-update (
+\begin{DoxyParamCaption}
+\item[{float}]{elapsed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_animation_a08b58e15e94d72e16f67759817bd2179}
+
+
+Updates the animation frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & the elapsed time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Animation.\-cs\end{DoxyCompactItemize}

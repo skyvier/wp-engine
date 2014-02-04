@@ -1,0 +1,137 @@
+\hypertarget{classwp__engine_1_1_state}{\section{wp\-\_\-engine.\-State Class Reference}
+\label{classwp__engine_1_1_state}\index{wp\-\_\-engine.\-State@{wp\-\_\-engine.\-State}}
+}
+
+
+The base class for all of the game states.  
+
+
+Inheritance diagram for wp\-\_\-engine.\-State\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwp__engine_1_1_state}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classwp__engine_1_1_state_a6751338962e6da93c8b9afc859df9762}{delegate void {\bfseries method} ()}\label{classwp__engine_1_1_state_a6751338962e6da93c8b9afc859df9762}
+
+\item 
+\hyperlink{classwp__engine_1_1_state_a7b0929ccee00bfae0591b4f2d5bb57a7}{State} (int screen\-Width, int screen\-Height)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_state_a3aac3b299c00af7ba2c91b65b873dcfc}{virtual void {\bfseries init} ()}\label{classwp__engine_1_1_state_a3aac3b299c00af7ba2c91b65b873dcfc}
+
+\item 
+\hypertarget{classwp__engine_1_1_state_a13c88b5362a424a22b8b66deae2695d5}{virtual void {\bfseries update} (float elapsed\-Time)}\label{classwp__engine_1_1_state_a13c88b5362a424a22b8b66deae2695d5}
+
+\item 
+\hypertarget{classwp__engine_1_1_state_aacb9e5cd0e6eebe165029d8410c04855}{virtual void {\bfseries load\-Content} (Content\-Manager content\-Manager)}\label{classwp__engine_1_1_state_aacb9e5cd0e6eebe165029d8410c04855}
+
+\item 
+\hypertarget{classwp__engine_1_1_state_a54cd59a5cefff596966c18d4b66f942b}{virtual void {\bfseries draw} (Sprite\-Batch sb)}\label{classwp__engine_1_1_state_a54cd59a5cefff596966c18d4b66f942b}
+
+\item 
+virtual \hyperlink{namespacewp__engine_aae123481cdcc6dc4c4474c1b0b62b152}{state\-Identifier} \hyperlink{classwp__engine_1_1_state_a9373a9a657364683fa648f655bc323a7}{requests} (\hyperlink{classwp__engine_1_1_event}{Event} recent\-Event)
+\begin{DoxyCompactList}\small\item\em Reacts to events. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_state_a9b58df33e71d1f9d8fbe3b6521ce9b93}{void {\bfseries add\-Bitmap} (float x, float y, string texture\-Name, Layer layer)}\label{classwp__engine_1_1_state_a9b58df33e71d1f9d8fbe3b6521ce9b93}
+
+\item 
+\hypertarget{classwp__engine_1_1_state_ade2cc3e6fe0619d9727511599abebedf}{void {\bfseries add\-Silent\-Bitmap} (float x, float y, string texture\-Name, Layer layer)}\label{classwp__engine_1_1_state_ade2cc3e6fe0619d9727511599abebedf}
+
+\item 
+\hypertarget{classwp__engine_1_1_state_a6fc3e1da80ea7ca94223c0cdff25bc05}{void {\bfseries add\-State\-Button} (\hyperlink{namespacewp__engine_aae123481cdcc6dc4c4474c1b0b62b152}{state\-Identifier} target\-State, float x, float y, string texture\-Name)}\label{classwp__engine_1_1_state_a6fc3e1da80ea7ca94223c0cdff25bc05}
+
+\item 
+\hypertarget{classwp__engine_1_1_state_a437af65520e3d7eb5c3e64221a4019f9}{void {\bfseries add\-Sound\-Effect} (Content\-Manager content, string file\-Name)}\label{classwp__engine_1_1_state_a437af65520e3d7eb5c3e64221a4019f9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classwp__engine_1_1_state_a73bf7aa957cff5e5e91b7015daa2894f}{Vector2 \hyperlink{classwp__engine_1_1_state_a73bf7aa957cff5e5e91b7015daa2894f}{resolution}}\label{classwp__engine_1_1_state_a73bf7aa957cff5e5e91b7015daa2894f}
+
+\begin{DoxyCompactList}\small\item\em The resolution of the screen. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_state_a53ed789963fc0d6863ecbbe34a902d5e}{List$<$ \hyperlink{classwp__engine_1_1_object}{Object} $>$ \hyperlink{classwp__engine_1_1_state_a53ed789963fc0d6863ecbbe34a902d5e}{bitmaps}}\label{classwp__engine_1_1_state_a53ed789963fc0d6863ecbbe34a902d5e}
+
+\begin{DoxyCompactList}\small\item\em Contains all of the object that act as simple pictures. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_state_abcdac647febd7fa9d599e679c3367848}{List$<$ \hyperlink{classwp__engine_1_1_live_object}{Live\-Object} $>$ \hyperlink{classwp__engine_1_1_state_abcdac647febd7fa9d599e679c3367848}{live\-Objects}}\label{classwp__engine_1_1_state_abcdac647febd7fa9d599e679c3367848}
+
+\begin{DoxyCompactList}\small\item\em Contains moving objects. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_state_a19e966030739c40f4c8f6e3a1476f02e}{Dictionary$<$ method, \hyperlink{classwp__engine_1_1_event_object}{Event\-Object} $>$ \hyperlink{classwp__engine_1_1_state_a19e966030739c40f4c8f6e3a1476f02e}{method\-Buttons}}\label{classwp__engine_1_1_state_a19e966030739c40f4c8f6e3a1476f02e}
+
+\begin{DoxyCompactList}\small\item\em Contains buttons that trigger a method. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_state_a4c5480cd2be3f954d88417d24aee6029}{Dictionary$<$ \hyperlink{namespacewp__engine_aae123481cdcc6dc4c4474c1b0b62b152}{state\-Identifier}, \\*
+\hyperlink{classwp__engine_1_1_event_object}{Event\-Object} $>$ \hyperlink{classwp__engine_1_1_state_a4c5480cd2be3f954d88417d24aee6029}{state\-Buttons}}\label{classwp__engine_1_1_state_a4c5480cd2be3f954d88417d24aee6029}
+
+\begin{DoxyCompactList}\small\item\em Constains buttons that trigger a state transition. \end{DoxyCompactList}\item 
+\hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} \hyperlink{classwp__engine_1_1_state_a858efbade97385348071d3fba522f712}{audio\-Handler}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} for the state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The base class for all of the game states. 
+
+(ie. \hyperlink{classwp__engine_1_1_help_state}{Help\-State}, \hyperlink{classwp__engine_1_1_menu_state}{Menu\-State}) Part of the state Partition.
+
+Implements \hyperlink{interfacewp__engine_1_1_state_interface}{State\-Interface}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classwp__engine_1_1_state_a7b0929ccee00bfae0591b4f2d5bb57a7}{\index{wp\-\_\-engine\-::\-State@{wp\-\_\-engine\-::\-State}!State@{State}}
+\index{State@{State}!wp_engine::State@{wp\-\_\-engine\-::\-State}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-State.\-State (
+\begin{DoxyParamCaption}
+\item[{int}]{screen\-Width, }
+\item[{int}]{screen\-Height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_state_a7b0929ccee00bfae0591b4f2d5bb57a7}
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\-Width} & the width of the screen resolution \\
+\hline
+{\em screen\-Height} & the height of the screen resolution \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classwp__engine_1_1_state_a9373a9a657364683fa648f655bc323a7}{\index{wp\-\_\-engine\-::\-State@{wp\-\_\-engine\-::\-State}!requests@{requests}}
+\index{requests@{requests}!wp_engine::State@{wp\-\_\-engine\-::\-State}}
+\subsubsection[{requests}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf state\-Identifier} wp\-\_\-engine.\-State.\-requests (
+\begin{DoxyParamCaption}
+\item[{{\bf Event}}]{recent\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classwp__engine_1_1_state_a9373a9a657364683fa648f655bc323a7}
+
+
+Reacts to events. 
+
+Returns the state\-Identifier of the state which the \hyperlink{classwp__engine_1_1_menu_state}{Menu\-State} requests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & of tap point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the state\-Identifier the state wishes to mutate to 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classwp__engine_1_1_state_a858efbade97385348071d3fba522f712}{\index{wp\-\_\-engine\-::\-State@{wp\-\_\-engine\-::\-State}!audio\-Handler@{audio\-Handler}}
+\index{audio\-Handler@{audio\-Handler}!wp_engine::State@{wp\-\_\-engine\-::\-State}}
+\subsubsection[{audio\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Audio\-Handler} wp\-\_\-engine.\-State.\-audio\-Handler\hspace{0.3cm}{\ttfamily [protected]}}}\label{classwp__engine_1_1_state_a858efbade97385348071d3fba522f712}
+
+
+The \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} for the state. 
+
+Should be a pointer. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+State.\-cs\end{DoxyCompactItemize}

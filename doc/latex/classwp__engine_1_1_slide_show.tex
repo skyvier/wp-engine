@@ -1,0 +1,143 @@
+\hypertarget{classwp__engine_1_1_slide_show}{\section{wp\-\_\-engine.\-Slide\-Show Class Reference}
+\label{classwp__engine_1_1_slide_show}\index{wp\-\_\-engine.\-Slide\-Show@{wp\-\_\-engine.\-Slide\-Show}}
+}
+
+
+A class for multiple animation\-: a slideshow.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwp__engine_1_1_slide_show_afc5fccb2413a851f53ce4fef36c7e265}{Slide\-Show} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_slide_show_a0dd7f71b3beabc241f1b537bb3e7e5e7}{add\-Animated\-Object} (\hyperlink{classwp__engine_1_1_animated_object}{Animated\-Object} animated\-Object)
+\begin{DoxyCompactList}\small\item\em Adds an animated object (animation). \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_slide_show_a77b840d961b07ca4c123ecfb1179f8f2}{update} (float elapsed)
+\begin{DoxyCompactList}\small\item\em Updates the current animation. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_slide_show_a030f369d8cd2de1fdbe1198e18f77bd2}{void \hyperlink{classwp__engine_1_1_slide_show_a030f369d8cd2de1fdbe1198e18f77bd2}{next} ()}\label{classwp__engine_1_1_slide_show_a030f369d8cd2de1fdbe1198e18f77bd2}
+
+\begin{DoxyCompactList}\small\item\em Activates the next animation in the slideshow. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_slide_show_a4015703b2d7d1eb24e48059823e6cbc2}{auto\-Update} (float elapsed)
+\begin{DoxyCompactList}\small\item\em Updates the slideshow and changes the animation automatically once the animation has been shown completely. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_slide_show_ae9e09fb9ebac00528557f756de8ce0e4}{draw} (Sprite\-Batch sb)
+\begin{DoxyCompactList}\small\item\em Draws the current frame of the current animation. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_slide_show_abca02602546c159a475dc1f31836d47f}{stop} ()
+\begin{DoxyCompactList}\small\item\em Stops the slideshow. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_slide_show_a6b9e6fa9b5a79b1ed9b5097f1141ed56}{resume} ()
+\begin{DoxyCompactList}\small\item\em Resumes the slideshow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for multiple animation\-: a slideshow. 
+
+The idea is that a slideshow contains multiple animations and the animation that is displayed can be changed by an event.
+
+Part of the animation partition. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classwp__engine_1_1_slide_show_afc5fccb2413a851f53ce4fef36c7e265}{\index{wp\-\_\-engine\-::\-Slide\-Show@{wp\-\_\-engine\-::\-Slide\-Show}!Slide\-Show@{Slide\-Show}}
+\index{Slide\-Show@{Slide\-Show}!wp_engine::SlideShow@{wp\-\_\-engine\-::\-Slide\-Show}}
+\subsubsection[{Slide\-Show}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Slide\-Show.\-Slide\-Show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_slide_show_afc5fccb2413a851f53ce4fef36c7e265}
+
+
+A constructor. 
+
+Sets the variables to default values. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classwp__engine_1_1_slide_show_a0dd7f71b3beabc241f1b537bb3e7e5e7}{\index{wp\-\_\-engine\-::\-Slide\-Show@{wp\-\_\-engine\-::\-Slide\-Show}!add\-Animated\-Object@{add\-Animated\-Object}}
+\index{add\-Animated\-Object@{add\-Animated\-Object}!wp_engine::SlideShow@{wp\-\_\-engine\-::\-Slide\-Show}}
+\subsubsection[{add\-Animated\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Slide\-Show.\-add\-Animated\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Animated\-Object}}]{animated\-Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_slide_show_a0dd7f71b3beabc241f1b537bb3e7e5e7}
+
+
+Adds an animated object (animation). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animated\-Object} & the \hyperlink{classwp__engine_1_1_animated_object}{Animated\-Object} containing the animation you wish to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_slide_show_a4015703b2d7d1eb24e48059823e6cbc2}{\index{wp\-\_\-engine\-::\-Slide\-Show@{wp\-\_\-engine\-::\-Slide\-Show}!auto\-Update@{auto\-Update}}
+\index{auto\-Update@{auto\-Update}!wp_engine::SlideShow@{wp\-\_\-engine\-::\-Slide\-Show}}
+\subsubsection[{auto\-Update}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Slide\-Show.\-auto\-Update (
+\begin{DoxyParamCaption}
+\item[{float}]{elapsed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_slide_show_a4015703b2d7d1eb24e48059823e6cbc2}
+
+
+Updates the slideshow and changes the animation automatically once the animation has been shown completely. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & elapsed time \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_slide_show_ae9e09fb9ebac00528557f756de8ce0e4}{\index{wp\-\_\-engine\-::\-Slide\-Show@{wp\-\_\-engine\-::\-Slide\-Show}!draw@{draw}}
+\index{draw@{draw}!wp_engine::SlideShow@{wp\-\_\-engine\-::\-Slide\-Show}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Slide\-Show.\-draw (
+\begin{DoxyParamCaption}
+\item[{Sprite\-Batch}]{sb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_slide_show_ae9e09fb9ebac00528557f756de8ce0e4}
+
+
+Draws the current frame of the current animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sb} & the spritebatch of the game \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_slide_show_a6b9e6fa9b5a79b1ed9b5097f1141ed56}{\index{wp\-\_\-engine\-::\-Slide\-Show@{wp\-\_\-engine\-::\-Slide\-Show}!resume@{resume}}
+\index{resume@{resume}!wp_engine::SlideShow@{wp\-\_\-engine\-::\-Slide\-Show}}
+\subsubsection[{resume}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Slide\-Show.\-resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_slide_show_a6b9e6fa9b5a79b1ed9b5097f1141ed56}
+
+
+Resumes the slideshow. 
+
+Resumes \hyperlink{classwp__engine_1_1_slide_show_a4015703b2d7d1eb24e48059823e6cbc2}{auto\-Update()}, and the current animation. Enables \hyperlink{classwp__engine_1_1_slide_show_a030f369d8cd2de1fdbe1198e18f77bd2}{next()} function. \hypertarget{classwp__engine_1_1_slide_show_abca02602546c159a475dc1f31836d47f}{\index{wp\-\_\-engine\-::\-Slide\-Show@{wp\-\_\-engine\-::\-Slide\-Show}!stop@{stop}}
+\index{stop@{stop}!wp_engine::SlideShow@{wp\-\_\-engine\-::\-Slide\-Show}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Slide\-Show.\-stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_slide_show_abca02602546c159a475dc1f31836d47f}
+
+
+Stops the slideshow. 
+
+Stops \hyperlink{classwp__engine_1_1_slide_show_a4015703b2d7d1eb24e48059823e6cbc2}{auto\-Update()}, and the current animation. Disables \hyperlink{classwp__engine_1_1_slide_show_a030f369d8cd2de1fdbe1198e18f77bd2}{next()} function. \hypertarget{classwp__engine_1_1_slide_show_a77b840d961b07ca4c123ecfb1179f8f2}{\index{wp\-\_\-engine\-::\-Slide\-Show@{wp\-\_\-engine\-::\-Slide\-Show}!update@{update}}
+\index{update@{update}!wp_engine::SlideShow@{wp\-\_\-engine\-::\-Slide\-Show}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Slide\-Show.\-update (
+\begin{DoxyParamCaption}
+\item[{float}]{elapsed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_slide_show_a77b840d961b07ca4c123ecfb1179f8f2}
+
+
+Updates the current animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & elapsed time \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Slide\-Show.\-cs\end{DoxyCompactItemize}

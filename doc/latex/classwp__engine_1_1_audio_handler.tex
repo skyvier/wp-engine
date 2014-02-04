@@ -1,0 +1,154 @@
+\hypertarget{classwp__engine_1_1_audio_handler}{\section{wp\-\_\-engine.\-Audio\-Handler Class Reference}
+\label{classwp__engine_1_1_audio_handler}\index{wp\-\_\-engine.\-Audio\-Handler@{wp\-\_\-engine.\-Audio\-Handler}}
+}
+
+
+A class for handling the audio elements of the game.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwp__engine_1_1_audio_handler_a40773dc4af528f42ae21b588f686fb3e}{Audio\-Handler} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_audio_handler_a8b541aa280225b6116582937d36a8ac3}{add\-Sound\-Effect} (Content\-Manager content\-Manager, string sound\-Name, bool repeat)
+\begin{DoxyCompactList}\small\item\em The function adds a sound effect to the \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} resources. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_audio_handler_af78298b6c184872f9bb9bec06bc526a2}{add\-Sound\-Effect} (Content\-Manager content\-Manager, string sound\-Name)
+\begin{DoxyCompactList}\small\item\em The function adds a sound effect to the \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} resources. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_audio_handler_ad55e26b0be9cd097de05fb88354b1406}{set\-Effect\-Parameter} (string identifier, string parameter, int value)
+\begin{DoxyCompactList}\small\item\em Changes settings for loaded sound effects in the \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} resources. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_audio_handler_af7737d9bad76b2394b32f3aed503d65c}{play\-Effect} (string identifier)
+\begin{DoxyCompactList}\small\item\em Plays a loaded sound effect. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_audio_handler_ab940dce57d9fe0fb88225fb1063e73c9}{stop\-Effect} (string identifier)
+\begin{DoxyCompactList}\small\item\em Stops a loaded sound effect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classwp__engine_1_1_audio_handler_a3db724fa0dd962cc7b124a305d2f05ac}{Dictionary$<$ string, \\*
+Sound\-Effect\-Instance $>$ \hyperlink{classwp__engine_1_1_audio_handler_a3db724fa0dd962cc7b124a305d2f05ac}{sound\-Effects}}\label{classwp__engine_1_1_audio_handler_a3db724fa0dd962cc7b124a305d2f05ac}
+
+\begin{DoxyCompactList}\small\item\em A dictionary of sound effects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for handling the audio elements of the game. 
+
+Part of the utilities partition.
+
+The windows phone platform has a limit of 16 simultaneous playing sounds. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classwp__engine_1_1_audio_handler_a40773dc4af528f42ae21b588f686fb3e}{\index{wp\-\_\-engine\-::\-Audio\-Handler@{wp\-\_\-engine\-::\-Audio\-Handler}!Audio\-Handler@{Audio\-Handler}}
+\index{Audio\-Handler@{Audio\-Handler}!wp_engine::AudioHandler@{wp\-\_\-engine\-::\-Audio\-Handler}}
+\subsubsection[{Audio\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Audio\-Handler.\-Audio\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_audio_handler_a40773dc4af528f42ae21b588f686fb3e}
+
+
+A constructor. 
+
+Initializes variables. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classwp__engine_1_1_audio_handler_a8b541aa280225b6116582937d36a8ac3}{\index{wp\-\_\-engine\-::\-Audio\-Handler@{wp\-\_\-engine\-::\-Audio\-Handler}!add\-Sound\-Effect@{add\-Sound\-Effect}}
+\index{add\-Sound\-Effect@{add\-Sound\-Effect}!wp_engine::AudioHandler@{wp\-\_\-engine\-::\-Audio\-Handler}}
+\subsubsection[{add\-Sound\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Audio\-Handler.\-add\-Sound\-Effect (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{content\-Manager, }
+\item[{string}]{sound\-Name, }
+\item[{bool}]{repeat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_audio_handler_a8b541aa280225b6116582937d36a8ac3}
+
+
+The function adds a sound effect to the \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content\-Manager} & the Content\-Manager of the game \\
+\hline
+{\em sound\-Name} & the name of the sound resource and the identifier for the sound \\
+\hline
+{\em repeat} & true for looped effects \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_audio_handler_af78298b6c184872f9bb9bec06bc526a2}{\index{wp\-\_\-engine\-::\-Audio\-Handler@{wp\-\_\-engine\-::\-Audio\-Handler}!add\-Sound\-Effect@{add\-Sound\-Effect}}
+\index{add\-Sound\-Effect@{add\-Sound\-Effect}!wp_engine::AudioHandler@{wp\-\_\-engine\-::\-Audio\-Handler}}
+\subsubsection[{add\-Sound\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Audio\-Handler.\-add\-Sound\-Effect (
+\begin{DoxyParamCaption}
+\item[{Content\-Manager}]{content\-Manager, }
+\item[{string}]{sound\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_audio_handler_af78298b6c184872f9bb9bec06bc526a2}
+
+
+The function adds a sound effect to the \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content\-Manager} & the Content\-Manager of the game \\
+\hline
+{\em sound\-Name} & the name of the sound resource and the identifier for the sound \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_audio_handler_af7737d9bad76b2394b32f3aed503d65c}{\index{wp\-\_\-engine\-::\-Audio\-Handler@{wp\-\_\-engine\-::\-Audio\-Handler}!play\-Effect@{play\-Effect}}
+\index{play\-Effect@{play\-Effect}!wp_engine::AudioHandler@{wp\-\_\-engine\-::\-Audio\-Handler}}
+\subsubsection[{play\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Audio\-Handler.\-play\-Effect (
+\begin{DoxyParamCaption}
+\item[{string}]{identifier}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_audio_handler_af7737d9bad76b2394b32f3aed503d65c}
+
+
+Plays a loaded sound effect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & the sound effect identifier in the \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} resources \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_audio_handler_ad55e26b0be9cd097de05fb88354b1406}{\index{wp\-\_\-engine\-::\-Audio\-Handler@{wp\-\_\-engine\-::\-Audio\-Handler}!set\-Effect\-Parameter@{set\-Effect\-Parameter}}
+\index{set\-Effect\-Parameter@{set\-Effect\-Parameter}!wp_engine::AudioHandler@{wp\-\_\-engine\-::\-Audio\-Handler}}
+\subsubsection[{set\-Effect\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Audio\-Handler.\-set\-Effect\-Parameter (
+\begin{DoxyParamCaption}
+\item[{string}]{identifier, }
+\item[{string}]{parameter, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_audio_handler_ad55e26b0be9cd097de05fb88354b1406}
+
+
+Changes settings for loaded sound effects in the \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & the name of the sound effect specified in \hyperlink{classwp__engine_1_1_audio_handler_a8b541aa280225b6116582937d36a8ac3}{add\-Sound\-Effect()} \\
+\hline
+{\em parameter} & the parameter identifier (volume, pitch and repeat are supported) \\
+\hline
+{\em value} & the parameter value (int) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_audio_handler_ab940dce57d9fe0fb88225fb1063e73c9}{\index{wp\-\_\-engine\-::\-Audio\-Handler@{wp\-\_\-engine\-::\-Audio\-Handler}!stop\-Effect@{stop\-Effect}}
+\index{stop\-Effect@{stop\-Effect}!wp_engine::AudioHandler@{wp\-\_\-engine\-::\-Audio\-Handler}}
+\subsubsection[{stop\-Effect}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Audio\-Handler.\-stop\-Effect (
+\begin{DoxyParamCaption}
+\item[{string}]{identifier}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_audio_handler_ab940dce57d9fe0fb88225fb1063e73c9}
+
+
+Stops a loaded sound effect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & the sound effect identifier in the \hyperlink{classwp__engine_1_1_audio_handler}{Audio\-Handler} resources \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Audio\-Handler.\-cs\end{DoxyCompactItemize}

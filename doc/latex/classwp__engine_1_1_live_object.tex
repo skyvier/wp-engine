@@ -1,0 +1,167 @@
+\hypertarget{classwp__engine_1_1_live_object}{\section{wp\-\_\-engine.\-Live\-Object Class Reference}
+\label{classwp__engine_1_1_live_object}\index{wp\-\_\-engine.\-Live\-Object@{wp\-\_\-engine.\-Live\-Object}}
+}
+
+
+A class for moving objects.  
+
+
+Inheritance diagram for wp\-\_\-engine.\-Live\-Object\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwp__engine_1_1_live_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwp__engine_1_1_live_object_a9df3b7ad35240319f760c7c02f24f453}{Live\-Object} (float x, float y, Texture2\-D \hyperlink{classwp__engine_1_1_object_a5aebe29df25c51280d462cab63733c98}{texture})
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hyperlink{classwp__engine_1_1_live_object_a4db779ac4b6c29bee18ad2f006d31c48}{Live\-Object} (float x, float y, Texture2\-D \hyperlink{classwp__engine_1_1_object_a5aebe29df25c51280d462cab63733c98}{texture}, Vector2 speed)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hyperlink{classwp__engine_1_1_live_object_a98dd1f4bce092323ebe406f618099246}{Live\-Object} (float x, float y, Texture2\-D \hyperlink{classwp__engine_1_1_object_a5aebe29df25c51280d462cab63733c98}{texture}, Vector2 speed, Vector2 acceleration)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_live_object_a0197e57f604dc1cb9e56440e193990e5}{{\bfseries Live\-Object} (float x, float y, string asset\-Name, Vector2 speed, Vector2 acceleration)}\label{classwp__engine_1_1_live_object_a0197e57f604dc1cb9e56440e193990e5}
+
+\item 
+virtual void \hyperlink{classwp__engine_1_1_live_object_af5db9ac2ecb0bc442ce6b43ffb1744b5}{update} ()
+\begin{DoxyCompactList}\small\item\em Updates the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classwp__engine_1_1_live_object_a78341f24c3b41df7e8b1770beadce169}{move} ()
+\begin{DoxyCompactList}\small\item\em Updates the speed and the location of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classwp__engine_1_1_live_object_a754498ab3768aac3a96d378cf933ff24}{Vector2 {\bfseries acceleration}}\label{classwp__engine_1_1_live_object_a754498ab3768aac3a96d378cf933ff24}
+
+\item 
+\hypertarget{classwp__engine_1_1_live_object_a3d8e2a3dd8b63bcf09b1009f1533ce47}{Vector2 {\bfseries speed}}\label{classwp__engine_1_1_live_object_a3d8e2a3dd8b63bcf09b1009f1533ce47}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classwp__engine_1_1_live_object_af077399d4235fc063fe8bc1f16250adf}{Vector2 \hyperlink{classwp__engine_1_1_live_object_af077399d4235fc063fe8bc1f16250adf}{Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{classwp__engine_1_1_live_object_af077399d4235fc063fe8bc1f16250adf}
+
+\begin{DoxyCompactList}\small\item\em The speed of the object. \end{DoxyCompactList}\item 
+\hypertarget{classwp__engine_1_1_live_object_a2d29e775cfabd3a3a0de7d50457722f6}{Vector2 \hyperlink{classwp__engine_1_1_live_object_a2d29e775cfabd3a3a0de7d50457722f6}{Acceleration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}\label{classwp__engine_1_1_live_object_a2d29e775cfabd3a3a0de7d50457722f6}
+
+\begin{DoxyCompactList}\small\item\em The acceleration of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class for moving objects. 
+
+Part of the object partition.
+
+Inherits \hyperlink{classwp__engine_1_1_object}{Object}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classwp__engine_1_1_live_object_a9df3b7ad35240319f760c7c02f24f453}{\index{wp\-\_\-engine\-::\-Live\-Object@{wp\-\_\-engine\-::\-Live\-Object}!Live\-Object@{Live\-Object}}
+\index{Live\-Object@{Live\-Object}!wp_engine::LiveObject@{wp\-\_\-engine\-::\-Live\-Object}}
+\subsubsection[{Live\-Object}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Live\-Object.\-Live\-Object (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{Texture2\-D}]{texture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_live_object_a9df3b7ad35240319f760c7c02f24f453}
+
+
+A constructor. 
+
+Sets initial speed and acceleration to zero. 
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate \\
+\hline
+{\em y} & y-\/coordinate \\
+\hline
+{\em texture} & the texture of the object \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_live_object_a4db779ac4b6c29bee18ad2f006d31c48}{\index{wp\-\_\-engine\-::\-Live\-Object@{wp\-\_\-engine\-::\-Live\-Object}!Live\-Object@{Live\-Object}}
+\index{Live\-Object@{Live\-Object}!wp_engine::LiveObject@{wp\-\_\-engine\-::\-Live\-Object}}
+\subsubsection[{Live\-Object}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Live\-Object.\-Live\-Object (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{Texture2\-D}]{texture, }
+\item[{Vector2}]{speed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_live_object_a4db779ac4b6c29bee18ad2f006d31c48}
+
+
+A constructor. 
+
+Sets initial acceleration to zero. 
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate \\
+\hline
+{\em y} & y-\/coordinate \\
+\hline
+{\em texture} & the texture of the object \\
+\hline
+{\em speed} & the initial speed of the object \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_live_object_a98dd1f4bce092323ebe406f618099246}{\index{wp\-\_\-engine\-::\-Live\-Object@{wp\-\_\-engine\-::\-Live\-Object}!Live\-Object@{Live\-Object}}
+\index{Live\-Object@{Live\-Object}!wp_engine::LiveObject@{wp\-\_\-engine\-::\-Live\-Object}}
+\subsubsection[{Live\-Object}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Live\-Object.\-Live\-Object (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{Texture2\-D}]{texture, }
+\item[{Vector2}]{speed, }
+\item[{Vector2}]{acceleration}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_live_object_a98dd1f4bce092323ebe406f618099246}
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x-\/coordinate \\
+\hline
+{\em y} & y-\/coordinate \\
+\hline
+{\em texture} & the texture of the object \\
+\hline
+{\em speed} & the initial speed of the object \\
+\hline
+{\em acceleration} & the initial acceleration of the object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classwp__engine_1_1_live_object_a78341f24c3b41df7e8b1770beadce169}{\index{wp\-\_\-engine\-::\-Live\-Object@{wp\-\_\-engine\-::\-Live\-Object}!move@{move}}
+\index{move@{move}!wp_engine::LiveObject@{wp\-\_\-engine\-::\-Live\-Object}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Live\-Object.\-move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classwp__engine_1_1_live_object_a78341f24c3b41df7e8b1770beadce169}
+
+
+Updates the speed and the location of the object. 
+
+Protected function. \hypertarget{classwp__engine_1_1_live_object_af5db9ac2ecb0bc442ce6b43ffb1744b5}{\index{wp\-\_\-engine\-::\-Live\-Object@{wp\-\_\-engine\-::\-Live\-Object}!update@{update}}
+\index{update@{update}!wp_engine::LiveObject@{wp\-\_\-engine\-::\-Live\-Object}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void wp\-\_\-engine.\-Live\-Object.\-update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classwp__engine_1_1_live_object_af5db9ac2ecb0bc442ce6b43ffb1744b5}
+
+
+Updates the object. 
+
+Read\-: moves it. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Live\-Object.\-cs\end{DoxyCompactItemize}

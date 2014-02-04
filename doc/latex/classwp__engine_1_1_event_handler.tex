@@ -1,0 +1,142 @@
+\hypertarget{classwp__engine_1_1_event_handler}{\section{wp\-\_\-engine.\-Event\-Handler Class Reference}
+\label{classwp__engine_1_1_event_handler}\index{wp\-\_\-engine.\-Event\-Handler@{wp\-\_\-engine.\-Event\-Handler}}
+}
+
+
+A class that simplifies touch event handling.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwp__engine_1_1_event_handler_a0cae2a069dd9c683df9f4070af440361}{Event\-Handler} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_event_handler_a5ce6db808f28e636db99c951f1efee4a}{enable\-Gesture} (Gesture\-Type gesture)
+\begin{DoxyCompactList}\small\item\em The function enables a single gesture in the \hyperlink{classwp__engine_1_1_event_handler}{Event\-Handler}. \end{DoxyCompactList}\item 
+void \hyperlink{classwp__engine_1_1_event_handler_a2567fdd7bf296859cc15a99bca4ca93c}{disable\-Gesture} (Gesture\-Type gesture)
+\begin{DoxyCompactList}\small\item\em The function disables a single gesture in the \hyperlink{classwp__engine_1_1_event_handler}{Event\-Handler}. \end{DoxyCompactList}\item 
+bool \hyperlink{classwp__engine_1_1_event_handler_a650ea5cc46aaa36b2879ffda3756ec45}{user\-Exit} ()
+\begin{DoxyCompactList}\small\item\em Function returns true if the user has pushed back button on his phone. \end{DoxyCompactList}\item 
+Vector2 \hyperlink{classwp__engine_1_1_event_handler_ad8ab3506a5103cc00710fd604f988a51}{read\-Tap\-Point} ()
+\begin{DoxyCompactList}\small\item\em This function is deprecated. \end{DoxyCompactList}\item 
+\hyperlink{classwp__engine_1_1_event}{Event} \hyperlink{classwp__engine_1_1_event_handler_aa56e1c6b0c880498ad3b168740601b0e}{read\-Event} ()
+\begin{DoxyCompactList}\small\item\em The function handles implemented and enabled gestures and places the gesture data in the data\-Vector variable which can be retrieved using the get\-Data\-Vector() function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classwp__engine_1_1_event_handler_a85020535b2ec59d73e7e2a686873704f}{List$<$ Gesture\-Type $>$ \hyperlink{classwp__engine_1_1_event_handler_a85020535b2ec59d73e7e2a686873704f}{enabled\-Gestures}}\label{classwp__engine_1_1_event_handler_a85020535b2ec59d73e7e2a686873704f}
+
+\begin{DoxyCompactList}\small\item\em List of enabled gestures. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that simplifies touch event handling. 
+
+Part of the utility partition.
+
+Still in development... 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classwp__engine_1_1_event_handler_a0cae2a069dd9c683df9f4070af440361}{\index{wp\-\_\-engine\-::\-Event\-Handler@{wp\-\_\-engine\-::\-Event\-Handler}!Event\-Handler@{Event\-Handler}}
+\index{Event\-Handler@{Event\-Handler}!wp_engine::EventHandler@{wp\-\_\-engine\-::\-Event\-Handler}}
+\subsubsection[{Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}wp\-\_\-engine.\-Event\-Handler.\-Event\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_event_handler_a0cae2a069dd9c683df9f4070af440361}
+
+
+A constructor. 
+
+Simply initializes class variables. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classwp__engine_1_1_event_handler_a2567fdd7bf296859cc15a99bca4ca93c}{\index{wp\-\_\-engine\-::\-Event\-Handler@{wp\-\_\-engine\-::\-Event\-Handler}!disable\-Gesture@{disable\-Gesture}}
+\index{disable\-Gesture@{disable\-Gesture}!wp_engine::EventHandler@{wp\-\_\-engine\-::\-Event\-Handler}}
+\subsubsection[{disable\-Gesture}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Event\-Handler.\-disable\-Gesture (
+\begin{DoxyParamCaption}
+\item[{Gesture\-Type}]{gesture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_event_handler_a2567fdd7bf296859cc15a99bca4ca93c}
+
+
+The function disables a single gesture in the \hyperlink{classwp__engine_1_1_event_handler}{Event\-Handler}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gesture} & the Gesture\-Type of the gesture you wish to disable \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_event_handler_a5ce6db808f28e636db99c951f1efee4a}{\index{wp\-\_\-engine\-::\-Event\-Handler@{wp\-\_\-engine\-::\-Event\-Handler}!enable\-Gesture@{enable\-Gesture}}
+\index{enable\-Gesture@{enable\-Gesture}!wp_engine::EventHandler@{wp\-\_\-engine\-::\-Event\-Handler}}
+\subsubsection[{enable\-Gesture}]{\setlength{\rightskip}{0pt plus 5cm}void wp\-\_\-engine.\-Event\-Handler.\-enable\-Gesture (
+\begin{DoxyParamCaption}
+\item[{Gesture\-Type}]{gesture}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_event_handler_a5ce6db808f28e636db99c951f1efee4a}
+
+
+The function enables a single gesture in the \hyperlink{classwp__engine_1_1_event_handler}{Event\-Handler}. 
+
+Remember to enable all gestures you want to use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gesture} & the Gesture\-Type of the gesture you wish to enable \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwp__engine_1_1_event_handler_aa56e1c6b0c880498ad3b168740601b0e}{\index{wp\-\_\-engine\-::\-Event\-Handler@{wp\-\_\-engine\-::\-Event\-Handler}!read\-Event@{read\-Event}}
+\index{read\-Event@{read\-Event}!wp_engine::EventHandler@{wp\-\_\-engine\-::\-Event\-Handler}}
+\subsubsection[{read\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event} wp\-\_\-engine.\-Event\-Handler.\-read\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_event_handler_aa56e1c6b0c880498ad3b168740601b0e}
+
+
+The function handles implemented and enabled gestures and places the gesture data in the data\-Vector variable which can be retrieved using the get\-Data\-Vector() function. 
+
+Currently the following gestures are implemented\-: Tap, Horizontal\-Drag, Hold, Vertical\-Drag.
+
+O\-U\-T\-D\-A\-T\-E\-D!
+
+\begin{DoxyReturn}{Returns}
+the Gesture\-Type of the detected gesture (or None) 
+\end{DoxyReturn}
+\hypertarget{classwp__engine_1_1_event_handler_ad8ab3506a5103cc00710fd604f988a51}{\index{wp\-\_\-engine\-::\-Event\-Handler@{wp\-\_\-engine\-::\-Event\-Handler}!read\-Tap\-Point@{read\-Tap\-Point}}
+\index{read\-Tap\-Point@{read\-Tap\-Point}!wp_engine::EventHandler@{wp\-\_\-engine\-::\-Event\-Handler}}
+\subsubsection[{read\-Tap\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Vector2 wp\-\_\-engine.\-Event\-Handler.\-read\-Tap\-Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_event_handler_ad8ab3506a5103cc00710fd604f988a51}
+
+
+This function is deprecated. 
+
+Please use the read\-Event\-Type() function instead. Returns the vector to the tapped point. Vector is a zero vector if there was no touch event.
+
+\begin{DoxyReturn}{Returns}
+the touch event location 
+\end{DoxyReturn}
+\hypertarget{classwp__engine_1_1_event_handler_a650ea5cc46aaa36b2879ffda3756ec45}{\index{wp\-\_\-engine\-::\-Event\-Handler@{wp\-\_\-engine\-::\-Event\-Handler}!user\-Exit@{user\-Exit}}
+\index{user\-Exit@{user\-Exit}!wp_engine::EventHandler@{wp\-\_\-engine\-::\-Event\-Handler}}
+\subsubsection[{user\-Exit}]{\setlength{\rightskip}{0pt plus 5cm}bool wp\-\_\-engine.\-Event\-Handler.\-user\-Exit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classwp__engine_1_1_event_handler_a650ea5cc46aaa36b2879ffda3756ec45}
+
+
+Function returns true if the user has pushed back button on his phone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em true} & if user pressed the back button \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Event\-Handler.\-cs\end{DoxyCompactItemize}
