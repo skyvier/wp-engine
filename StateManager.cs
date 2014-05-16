@@ -15,7 +15,7 @@ namespace wp_engine
      */
     enum stateIdentifier
     {
-        MENU, HELP, GAME, EXIT, NONE
+        MENU, HELP, GAME, EXIT, NONE, ANIMATION
     };
 
     /**
